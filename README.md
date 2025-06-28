@@ -134,3 +134,33 @@ Use case diagrams are visual representations in UML (Unified Modeling Language) 
 Below is a use case diagram illustrating key interactions within the booking management system.
 
 ![Booking System Use Case Diagram](alx-booking-uc.png)
+
+## Acceptance Criteria
+
+**Importance of Acceptance Criteria in Requirement Analysis:**
+
+Acceptance criteria are crucial conditions that a feature or user story must satisfy to be considered complete and acceptable by stakeholders . They serve as a clear, precise, and testable definition of "done."
+
+Their importance lies in:
+* **Clarity and Shared Understanding:** They eliminate ambiguity by providing a specific, measurable agreement between the development team and stakeholders on what needs to be delivered.
+* **Basis for Testing:** They directly inform the creation of test cases, ensuring that the developed functionality meets the predefined quality and behavioral standards.
+* **Quality Assurance:** By setting clear benchmarks, they help maintain the quality of the software and ensure that it truly addresses user needs and business objectives.
+* **Reduced Rework:** By clarifying expectations upfront, they significantly reduce the likelihood of misinterpretations, leading to less rework and more efficient development cycles.
+* **Defines "Done":** They provide a definitive point at which a feature can be declared complete, allowing for confident sign-off and progression.
+
+**Example of Acceptance Criteria for the Checkout Feature in the Booking Management System:**
+
+**Feature:** Checkout Process
+
+**User Story:** As a registered user, I want to be able to complete my booking and make a payment securely, so that I can confirm my reservation.
+
+**Acceptance Criteria:**
+
+* **AC1: Payment Method Selection:** The user shall be able to select from at least two payment options (e.g., Credit Card, Mobile Money) on the checkout page.
+* **AC2: Secure Payment Processing:** Upon initiating payment, the system shall securely transmit payment details to the payment gateway using encrypted channels (HTTPS/SSL).
+* **AC3: Payment Confirmation:** After successful payment, the system shall display a "Payment Successful" message within 3 seconds.
+* **AC4: Booking Confirmation Email:** A confirmation email containing booking details (property name, dates, total cost, booking ID) shall be sent to the user's registered email address within 2 minutes of successful payment.
+* **AC5: Booking Status Update:** The booking status in the user's "My Bookings" section shall be updated to "Confirmed" immediately upon successful payment.
+* **AC6: Payment Failure Handling:** If payment fails, the system shall display an error message explaining the reason (e.g., "Card declined," "Insufficient funds") and prompt the user to retry or select an alternative payment method.
+* **AC7: Data Integrity:** In case of payment failure, no partial charges or incomplete bookings shall be recorded.
+* **AC8: Redirection after Payment:** Upon successful payment, the user shall be automatically redirected to a booking summary or confirmation page.
